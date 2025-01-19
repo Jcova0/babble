@@ -6,4 +6,400 @@
   .center {
     @apply h-screen flex justify-center items-center;
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3 {
+    font-weight: bold;
+    color: #6a0dad;
+  }
+
+  .header {
+    background-color: #6a0dad;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header .logo h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+
+  .hero {
+    background: url('/path/to/hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+
+  .btn-primary {
+    background-color: #6a0dad;
+    color: #ffffff;
+  }
+
+  .btn-primary:hover {
+    background-color: #9b59b6;
+  }
+
+  .btn-secondary {
+    background-color: #f2f2f2;
+    color: #6a0dad;
+    border: 1px solid #6a0dad;
+  }
+
+  .btn-secondary:hover {
+    background-color: #e1e1e1;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #6a0dad;
+    outline: none;
+  }
+
+  .features {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .features-header {
+    margin-bottom: 40px;
+  }
+
+  .features-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .features-header p {
+    font-size: 1.25rem;
+    color: #777;
+  }
+
+  .features-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .feature-item {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-item h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .feature-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .footer {
+    background-color: #6a0dad;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .footer-content p {
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .auth-container {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .auth-form {
+    background-color: white;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .form-group input:focus {
+    border-color: #6a0dad; 
+    outline: none;
+  }
+
+
+  .form-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    background-color: #6a0dad; 
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #9b59b6;
+  }
+
+  .auth-switch {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .auth-switch a {
+    color: #0099ff;
+    text-decoration: none;
+  }
+
+  .auth-switch a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .auth-form {
+      padding: 30px;
+    }
+
+    .form-title {
+      font-size: 1.8rem;
+    }
+
+    .form-group input {
+      padding: 10px;
+    }
+
+    .btn-primary {
+      font-size: 1rem;
+    }
+
+    .auth-switch p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .auth-form {
+      padding: 20px;
+      width: 90%;
+    }
+
+    .form-title {
+      font-size: 1.6rem;
+    }
+
+    .form-group input {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+
+    .btn-primary {
+      font-size: 0.9rem;
+    }
+
+    .auth-switch p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .content-container {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content {
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .content-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .content-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+  .content h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .content-container {
+      padding: 30px;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .content-title {
+      font-size: 1.8rem;
+    }
+
+    .content-text {
+      font-size: 0.95rem;
+    }
+
+    .content h3 {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content-container {
+      padding: 20px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content-title {
+      font-size: 1.6rem;
+    }
+
+    .content-text {
+      font-size: 0.9rem;
+    }
+
+    .content h3 {
+      font-size: 1rem;
+    }
+  }
+
 }

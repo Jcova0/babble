@@ -3,14 +3,19 @@ import Button from '../Button';
 import Header from '../Header';
 import Footer from '../Footer';
 
-const Login = () => {
+const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (password !== confirmPassword) {
+            alert("Passwords don't match!");
+            return;
+        }
 
-        console.log('Logged in with:', { email, password });
+        console.log('Signed up with:', { email, password });
     };
 
     return (
@@ -19,7 +24,7 @@ const Login = () => {
 
             <section className="auth-form">
                 <div className="form-container">
-                    <h2 className="form-title">Log In</h2>
+                    <h2 className="form-title">Sign Up</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
@@ -43,13 +48,24 @@ const Login = () => {
                             />
                         </div>
 
+                        <div className="form-group">
+                            <label htmlFor="confirmPassword">Confirm Password</label>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                value={confirmPassword}
+                                onChange={(e) => setConfirmPassword(e.target.value)}
+                                required
+                            />
+                        </div>
+
                         <div className="form-actions">
-                            <Button label="Log In" type="submit" className="btn-primary" />
+                            <Button label="Sign Up" type="submit" className="btn-primary" />
                         </div>
                     </form>
 
                     <div className="auth-switch">
-                        <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+                        <p>Already have an account? <a href="/login">Log In</a></p>
                     </div>
                 </div>
             </section>
@@ -59,4 +75,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Signup;
